@@ -1,62 +1,73 @@
 <template>
-    <div class="container">
 
-        <!-- navbar bootstrap -->
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
+    <header class="ms_header">
 
-                <!-- logo dimensioni width 50% -->
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/img/dark-logo.png" class="w-50" alt="navbar-logo">
-                </a>
-                
-                <!-- lista link dinamica, ad ogni link in after fontawasome freccia giu' -->
-                <ul class="navbar-nav ms-auto me-3">
+        <div class="container">
+
+            <!-- navbar bootstrap -->
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+
+                    <!-- logo dimensioni width 50% -->
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/img/dark-logo.png" class="w-50" alt="navbar-logo">
+                    </a>
                     
-                    <li class="nav-item ">
-                        <a class="nav-link text-dark ms_nav-link" href="#">Link</a>
-                    </li>
+                    <!-- lista link dinamica, ad ogni link in after fontawasome freccia giu' -->
+                    <ul class="navbar-nav ms-auto me-3">
+                        
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark ms_nav-link" href="#">Link</a>
+                        </li>
 
-                    <li class="nav-item ">
-                        <a class="nav-link text-dark" href="#">Link</a>
-                    </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="#">Link</a>
+                        </li>
 
-                    <li class="nav-item ">
-                        <a class="nav-link text-dark" href="#">Link</a>
-                    </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="#">Link</a>
+                        </li>
 
-                    <li class="nav-item ">
-                        <a class="nav-link text-dark" href="#">Link</a>
-                    </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="#">Link</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">
-                            <i class="fa-regular fa-circle-user"></i>
-                        </a>
-                    </li>
-                                                            
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </a>
+                        </li>
+                                                                
+                    </ul>
 
-                <!-- form stilizzato da me  -->
-                <form class="d-flex align-items-center px-2 rounded-2 ms_form">
-                    <input class="form-control me-2 bg-transparent border-0 ms_input" type="search" placeholder="Search..." aria-label="Search">
-                    <a href="#"><i class="fa-solid fa-magnifying-glass ms_search-icon"></i></a>        
-                </form>
-                
-            </div>
-        </nav>
-    </div>
+                    <!-- form stilizzato da me  -->
+                    <form class="d-flex align-items-center px-2 rounded-2 ms_form">
+                        <input class="form-control me-2 bg-transparent border-0 ms_input" type="search" placeholder="Search..." aria-label="Search">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass ms_search-icon"></i></a>        
+                    </form>
+                    
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
 </template>
 
 <script>
 export default {
-
+    name: 'myHeader',
 }
 </script>
 
 <style lang="scss" scoped>
 // richiamo varibili create da me
 @import "../assets/style/variables.scss";
+
+.ms_header{
+    box-shadow: 0px 3px 10px $colorGrey;
+}
+
 
 .ms_nav-link::after{
     display: inline-block;
