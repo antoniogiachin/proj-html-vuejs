@@ -2,8 +2,34 @@
 $colorGrey : #9ea4a5;
 $colorLightGrey : #f6f3f5;
 $colorGreen : #1fad96;
-$colorDarkBlue: #48495f;
+$colorDarkBlue: #3f3a64;
 $colorFadeBlue: #a9a7b9;
 
 // font size
 $fontLittle: 0.8em;
+
+//mixins font awasome css
+@mixin awasomeAppend{
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    margin: 0px 10px 0px 0px;
+} 
+
+//mixin button
+@mixin button{
+    
+    background-color: $colorGreen;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: $fontLittle;
+
+    
+
+    &:hover{
+        background-color: $colorDarkBlue;
+    }
+
+}

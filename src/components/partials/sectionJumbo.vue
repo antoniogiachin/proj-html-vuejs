@@ -1,11 +1,11 @@
 <template>
     <section id="jumbotron" class="py-5">
 
-            <div class="ms_actions d-flex flex-column position-absolute rounded-start">
-                <i class="fas fa-ruler-combined"></i>
-                <i class="fa-regular fa-life-ring"></i>
-                <i class="fas fa-book"></i>
-                <i class="fas fa-shopping-cart"></i>
+            <div class="ms_actions d-flex flex-column align-items-center position-absolute rounded-start">
+                <a href="#" class="text-dark"><i class="fas fa-ruler-combined"></i></a>
+                <a href="#" class="text-dark"><i class="fa-regular fa-life-ring"></i></a>
+                <a href="#" class="text-dark"><i class="fas fa-book"></i></a>
+                <a href="#" class="text-dark"><i class="fas fa-shopping-cart"></i></a>
             </div>
 
             <div class="container">
@@ -95,34 +95,21 @@ export default {
             color: $colorGreen;
 
             &::after{
-                display: inline-block;
-                text-rendering: auto;
-                -webkit-font-smoothing: antialiased;
-                font: var(--fa-font-solid);
+                @include awasomeAppend;
                 content: "\f178";
-                margin: 0px 10px;
+                margin-left: 5px;
             }
         }
 
         .ms_button{
-            background-color: $colorGreen;
-            color: #fff;
-            padding: 15px 20px;
-            font-weight: bold;
-            font-size: $fontLittle;
+            
+            @include button;
     
             &::before{
-                display: inline-block;
-                text-rendering: auto;
-                -webkit-font-smoothing: antialiased;
-                font: var(--fa-font-solid);
+                @include awasomeAppend;
                 content: "\f019";
-                margin: 0px 10px;
             }
     
-            &:hover{
-                background-color: $colorDarkBlue;
-            }
         }
     }
     
