@@ -40,7 +40,7 @@
                 <!-- form stilizzato da me  -->
                 <form class="d-flex align-items-center px-2 rounded-2 ms_form">
                     <input class="form-control me-2 bg-transparent border-0 ms_input" type="search" placeholder="Search..." aria-label="Search">
-                    <i class="fa-solid fa-magnifying-glass ms_search-icon"></i>    
+                    <a href="#"><i class="fa-solid fa-magnifying-glass ms_search-icon"></i></a>        
                 </form>
                 
             </div>

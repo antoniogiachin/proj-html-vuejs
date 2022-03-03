@@ -18,6 +18,12 @@ export default {
     myHeader,
     myMain,
     myFooter,
+  },
+
+  data(){
+    return{
+      
+    }
   }
 }
 </script>
