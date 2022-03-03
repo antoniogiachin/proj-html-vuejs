@@ -1,66 +1,27 @@
 <template>
     <main>
-        <section id="jumbotron" class="py-5">
+        <!-- sezione jumbotron -->
+        <sectionJumbo/>
 
-            <div class="ms_actions d-flex flex-column position-absolute rounded-start">
-                <i class="fas fa-ruler-combined"></i>
-                <i class="fa-regular fa-life-ring"></i>
-                <i class="fas fa-book"></i>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-
-            <div class="container">
-
-                <!-- riga download e img -->
-                <div class="row">
-                    <div class="col-5 d-flex align-items-center ">
-                        <div class="ms_card">
-                            <h1 class="mb-1">Distant learning for further expansion</h1>
-                            <p>Learning is a lofe-long jurney that in fact we never find the terminate stop. Stop searching, enjoy the process.</p>
-                            <button class="border-0 ms_button rounded-2 d-block my-2"> <span>Download free guide</span> </button>
-                            <span class="ms_sample">Have questions?</span> <span ><a class="ms_sample-link" href="#">Get Free Sample</a></span>
-                        </div>
-                    </div>
-                    <div class="col-6 offset-1 d-flex justify-content-center position-relative">
-                        <div class="shape-container position-absolute d-flex flex-column">
-                            <img src="../assets/img/maxcoach-shape-07.png" class="shape" alt="shape-jumbo">
-                            <img src="../assets/img/maxcoach-shape-07.png" class="shape" alt="shape-jumbo">
-                        </div>
-                        <img src="../assets/img/maxcoach-shape-07.png" class="shape shape-03 position-absolute" alt="shape-jumbo">
-                        <img src="../assets/img/about-me-profile.jpg"  class="rounded-circle w-75 " alt="first-section-img">
-                        <img src="../assets/img/maxcoach-shape-02.png" class="shape shape-02 my-5" alt="shape-jumbo">
-                    </div>
-                </div>
-
-                <!-- row clients -->
-                <div class="row my-4">
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="../assets/img/client-logo-01.png" class="ms_client-img" alt="client-1">
-                    </div>
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="../assets/img/client-logo-02.png" class="ms_client-img" alt="client-2">
-                    </div>
-                    <div class="col d-flex align-items-center justify-content-centerr">
-                        <img src="../assets/img/client-logo-03.png" class="ms_client-img" alt="client-3">
-                    </div>
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="../assets/img/client-logo-04.png" class="ms_client-img" alt="client-4">
-                    </div>
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="../assets/img/client-logo-05.png" class="ms_client-img" alt="client-5">
-                    </div>
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="../assets/img/client-logo-06.png" class="ms_client-img" alt="client-6">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- sezione online courses -->
+        <onlineCourses/>
+        
     </main>
 </template>
 
 <script>
-export default {
+import sectionJumbo from './partials/sectionJumbo.vue'
+import onlineCourses from './partials/onlineCourses.vue'
 
+
+export default {
+    name: 'myMain',
+
+    components : {
+        sectionJumbo,
+
+        onlineCourses,
+    }
 }
 </script>
 
