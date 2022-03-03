@@ -4,7 +4,7 @@
         <div class="container">
 
             <!-- titolo sezione -->
-            <div class="row">
+            <div class="row section-title">
                 <div class="col text-center">
                     <p class="text-uppercase">stimulated to learn?</p>
                     <h2>Featured Online Courses</h2>
@@ -151,7 +151,7 @@
 
 <script>
 export default {
-
+    name: 'onlineCourses'
 }
 </script>
 
@@ -161,6 +161,10 @@ export default {
 
 #courses{
     background-color: $colorLightGrey;
+
+    .section-title{
+        @include sectionTitle
+    }
 
     .ms_card-h{
         text-decoration: none;

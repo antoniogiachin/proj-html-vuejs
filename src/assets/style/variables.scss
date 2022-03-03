@@ -33,3 +33,14 @@ $fontLittle: 0.8em;
     }
 
 }
+
+// mixin section title
+@mixin sectionTitle{
+    p{
+        color: $colorFadeBlue;
+    }
+
+    h2{
+        color: $colorDarkBlue;
+    }
+}
