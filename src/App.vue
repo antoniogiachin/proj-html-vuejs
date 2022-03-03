@@ -22,12 +22,14 @@ export default {
 
   data(){
     return{
-      
+
     }
   }
 }
 </script>
 
 <style lang="scss">
-
+#app{
+  font-family: 'Open Sans';
+}
 </style>
