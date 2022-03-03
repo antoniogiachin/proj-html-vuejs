@@ -1,4 +1,4 @@
 # proj-html-vuejs
 
-## Pre requisiti
-Installati fontawasome e bootstrap 5
+## Pre requisitinpm
+Installati font awasome e bootstrap 5.
