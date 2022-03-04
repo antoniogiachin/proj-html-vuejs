@@ -22,18 +22,18 @@
                 </div>
                 
                 <div class="col-4">
-                    <div class="card border-0">
+                    <div class="card border-0 ms_card">
                         <img src="../../assets/img/artist-blog-03-480x352.jpeg" class="card-img-top" alt="blog-card-img">
                         <div class="card-body lh-lg">
                             <span class="text-uppercase">Artist</span>
-                            <h5>Brush Strokes Energize Trees in Paintings</h5>
+                            <h5>Brush Strokes Energize Trees <br> in Paintings</h5>
                             <span class="ms_span-left me-5">May 15, 2020</span> <span class="ms_span-right">688 views</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-4">
-                    <div class="card border-0">
+                    <div class="card border-0 ms_card">
                         <img src="../../assets/img/artist-blog-01-480x352.jpg" class="card-img-top" alt="blog-card-img">
                         <div class="card-body lh-lg">
                             <span class="text-uppercase">Artist</span>

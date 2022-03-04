@@ -64,7 +64,7 @@
                 </div>
 
                 <!-- separatore -->
-                <div class="ms_divide d-flex justify-content-center mt-2 mb-5">
+                <div class="ms_divide d-flex justify-content-center my-3">
                     <i class="fas fa-circle ms_current-dot"></i>
                     <i class="fas fa-circle"></i>
                     <i class="fas fa-circle"></i>
@@ -124,7 +124,7 @@ export default {
 
     .section-title{
 
-        padding: 100px 0px;
+        padding: 60px 0px;
         p{
             color: $colorFadeBlue;
         }
