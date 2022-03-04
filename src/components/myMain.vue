@@ -8,6 +8,9 @@
 
         <!-- sezione smart touring -->
         <smartTouring/>
+
+        <!-- sezione enjoy companiionship -->
+        <enjoyComp/>
         
     </main>
 </template>
@@ -16,6 +19,7 @@
 import sectionJumbo from './partials/sectionJumbo.vue'
 import onlineCourses from './partials/onlineCourses.vue'
 import smartTouring from './partials/smartTouring.vue'
+import enjoyComp from './partials/enjoyComp.vue'
 
 
 export default {
@@ -27,6 +31,8 @@ export default {
         onlineCourses,
 
         smartTouring,
+
+        enjoyComp,
     }
 }
 </script>
