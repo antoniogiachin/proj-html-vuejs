@@ -11,6 +11,9 @@
 
         <!-- sezione enjoy companiionship -->
         <enjoyComp/>
+
+        <!-- sezione varbatim quotes -->
+        <verbatimQuotes/>
         
     </main>
 </template>
@@ -20,6 +23,7 @@ import sectionJumbo from './partials/sectionJumbo.vue'
 import onlineCourses from './partials/onlineCourses.vue'
 import smartTouring from './partials/smartTouring.vue'
 import enjoyComp from './partials/enjoyComp.vue'
+import verbatimQuotes from './partials/verbatimQuotes.vue'
 
 
 export default {
@@ -33,6 +37,8 @@ export default {
         smartTouring,
 
         enjoyComp,
+
+        verbatimQuotes,
     }
 }
 </script>
