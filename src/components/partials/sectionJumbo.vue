@@ -12,7 +12,7 @@
 
                 <!-- riga download e img -->
                 <div class="row">
-                    <div class="col-5 d-flex align-items-center ">
+                    <div class="col-5 d-flex align-items-center">
                         <div class="ms_card">
                             <h1 class="mb-1">Distant learning for further expansion</h1>
                             <p>Learning is a lofe-long jurney that in fact we never find the terminate stop. Stop searching, enjoy the process.</p>

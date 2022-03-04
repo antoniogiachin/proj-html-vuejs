@@ -28,8 +28,8 @@
                         <div class="ms_people-quote d-flex pt-3">
                             <img src="../../assets/img/testimonial-avata-03.jpg" class="img-fluid rounded-circle" alt="testimonial-img">
                             <div class="ms_people-info d-flex flex-column justify-content-center ms-5">
-                                <span class="fw-bold text-uppercase mb-1">florence themes</span>
-                                <span>/ Multimedia Admin</span>
+                                <span class="text-uppercase mb-1">florence themes</span>
+                                <span class="ms_span-role">/ Multimedia Admin</span>
                             </div>
                         </div>
                     </div>
@@ -42,8 +42,8 @@
                         <div class="ms_people-quote d-flex pt-3">
                             <img src="../../assets/img/testimonial-avata-02.jpg" class="img-fluid rounded-circle" alt="testimonial-img">
                             <div class="ms_people-info d-flex flex-column justify-content-center ms-5">
-                                <span class="fw-bold text-uppercase mb-1">mina hollace</span>
-                                <span>/ Freelancer</span>
+                                <span class="text-uppercase mb-1">mina hollace</span>
+                                <span class="ms_span-role">/ Freelancer</span>
                             </div>
                         </div>
                     </div>
@@ -56,8 +56,8 @@
                         <div class="ms_people-quote d-flex pt-3">
                             <img src="../../assets/img/testimonial-avata-04.jpg" class="img-fluid rounded-circle" alt="testimonial-img">
                             <div class="ms_people-info d-flex flex-column justify-content-center ms-5">
-                                <span class="fw-bold text-uppercase mb-1">Medley Pondor</span>
-                                <span>/ IT Specialist</span>
+                                <span class="text-uppercase mb-1">Medley Pondor</span>
+                                <span class="ms_span-role">/ IT Specialist</span>
                             </div>
                         </div>
                     </div>
@@ -143,6 +143,8 @@ export default {
     .ms_card{
         font-size: $fontLittle;
 
+        min-height: 350px;
+
         padding: 30px 60px;
 
         background-color: #fff;
@@ -158,6 +160,10 @@ export default {
         span{
             color: $colorDarkBlue;
 
+        }
+
+        .ms_span-role{
+            color: $colorFadeBlue;
         }
 
         img{

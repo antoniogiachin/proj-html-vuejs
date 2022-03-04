@@ -16,10 +16,10 @@
 
                 <!-- testo -->
                 <div class="col-4 pe-5 position-relative ms_text-col">
-                    <p class="text-uppercase fw-bold">get started <span class="fw-bold">efforlessly</span> </p>
+                    <p class="text-uppercase">get started <span>effortlessly</span> </p>
                     <h1 class="pe-2">Enjoy Our <span>Companionship</span> </h1>
                     <p class="pe-5 mt-3">Sneak peak intowhat has in store for you on our online teaching and mentoring portal. Seek for some hidden hints of early-bird reward as well.</p>
-                    <a href="#" class="position-absolute top-100 ms_link fw-bold">Download free guidebook</a>
+                    <a href="#" class="position-absolute top-100 ms_link">Download free guidebook</a>
                 </div>
             </div>
         </div>

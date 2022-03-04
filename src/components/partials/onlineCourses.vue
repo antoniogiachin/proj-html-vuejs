@@ -23,7 +23,7 @@
                             </div>
                             <div class="col-md-8 p-2 d-flex align-items-center justify-content-center">
                                 <div class="ms_card-body pe-4">
-                                    <h3 class="card-title"><span class="fw-bold">$40.</span>00</h3>
+                                    <h3 class="card-title"><span class="h2">$40.</span>00</h3>
                                     <h4 class="card-title">Learning to write as a Professional Author</h4>
                                     <span class="me-5 ms_span-card-left">20 Lessons</span>
                                     <span class="ms-5 ms_span-card-right"> 50 Students</span>
@@ -43,7 +43,7 @@
                             </div>
                             <div class="col-md-8 p-2 d-flex align-items-center justify-content-center">
                                 <div class="ms_card-body pe-4">
-                                    <h3 class="card-title"><span class="fw-bold">Free</span></h3>
+                                    <h3 class="card-title"><span class="h2">Free</span></h3>
                                     <h4 class="card-title">Customer-centric Info-tech Strategies</h4>
                                     <span class="me-5 ms_span-card-left">24 Lessons</span>
                                     <span class="ms-5 ms_span-card-right"> 769 Students</span>
@@ -63,7 +63,7 @@
                             </div>
                             <div class="col-md-8 p-2 d-flex align-items-center justify-content-center">
                                 <div class="ms_card-body pe-4">
-                                    <h3 class="card-title"><span class="fw-bold">$19.</span>00</h3>
+                                    <h3 class="card-title"><span class="h2">$19.</span>00</h3>
                                     <h4 class="card-title">Opening Programming Courses for Everyone: Python</h4>
                                     <span class="me-5 ms_span-card-left">17 Lessons</span>
                                     <span class="ms-5 ms_span-card-right"> 62 Students</span>
@@ -83,7 +83,7 @@
                             </div>
                             <div class="col-md-8 p-2 d-flex align-items-center justify-content-center">
                                 <div class="ms_card-body pe-4">
-                                    <h3 class="card-title"><span class="fw-bold">$26.</span>00</h3>
+                                    <h3 class="card-title"><span class="h2">$26.</span>00</h3>
                                     <h4 class="card-title">Accademic Listening and Note-taking</h4>
                                     <span class="me-5 ms_span-card-left">14 Lessons</span>
                                     <span class="ms-5 ms_span-card-right"> 67 Students</span>
@@ -103,7 +103,7 @@
                             </div>
                             <div class="col-md-8 p-2 d-flex align-items-center justify-content-center">
                                 <div class="ms_card-body pe-4">
-                                    <h3 class="card-title"><span class="fw-bold">$39.</span>00</h3>
+                                    <h3 class="card-title"><span class="h2">$39.</span>00</h3>
                                     <h4 class="card-title">Master jQuery in a Short Period of Time</h4>
                                     <span class="me-5 ms_span-card-left">6 Lessons</span>
                                     <span class="ms-5 ms_span-card-right"> 51 Students</span>
@@ -123,7 +123,7 @@
                             </div>
                             <div class="col-md-8 p-2 d-flex align-items-center justify-content-center">
                                 <div class="ms_card-body pe-4">
-                                    <h3 class="card-title"><span class="fw-bold">$59.</span>00</h3>
+                                    <h3 class="card-title"><span class="h2">$59.</span>00</h3>
                                     <h4 class="card-title">Introduction to Javascript for Beginners</h4>
                                     <span class="me-5 ms_span-card-left">14 Lessons</span>
                                     <span class="ms-5 ms_span-card-right"> 76 Students</span>
