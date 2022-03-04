@@ -4,5 +4,18 @@
 Installati font awasome e bootstrap 5.
 
 
-<h5 class="pb-3">It's a chioce of quality for peaople with special needs</h5>
-                        <p>I am a very strict person so I require everything to be organized and neat. Then, i'll be able to make things right and shine. MaxCoach guys got me.</p>
+<div class="col-4">
+                    <div class="card">
+                        <img src="artist-blog-03-480x352.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="artist-blog-03-480x352.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>

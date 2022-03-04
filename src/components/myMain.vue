@@ -17,6 +17,9 @@
 
         <!-- sezione recap-flex -->
         <recapFlex/>
+
+        <!-- sezione most popular -->
+        <mostPopular/>
         
     </main>
 </template>
@@ -28,6 +31,8 @@ import smartTouring from './partials/smartTouring.vue'
 import enjoyComp from './partials/enjoyComp.vue'
 import verbatimQuotes from './partials/verbatimQuotes.vue'
 import recapFlex from './partials/recapFlex.vue'
+import mostPopular from './partials/mostPopular.vue'
+
 
 
 
@@ -46,6 +51,8 @@ export default {
         verbatimQuotes,
 
         recapFlex,
+
+        mostPopular,
     }
 }
 </script>

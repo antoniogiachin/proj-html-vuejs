@@ -113,7 +113,7 @@ export default {
         position: absolute;
         top: -275px;
         transform: rotatey(180deg);
-        width: 1000px;
+        width: 700px;
         height: 500px;
         right: 0;
         z-index: -1;
