@@ -64,11 +64,26 @@
                 </div>
 
                 <!-- separatore -->
-                <div class="ms_divide d-flex justify-content-center mt-2">
+                <div class="ms_divide d-flex justify-content-center mt-2 mb-5">
                     <i class="fas fa-circle ms_current-dot"></i>
                     <i class="fas fa-circle"></i>
                     <i class="fas fa-circle"></i>
                     <i class="fas fa-circle"></i>
+                </div>
+
+                <!-- row get started -->
+                <div class="container row my-5 ms_get-started">
+                    <div class="col position-relative">
+                            <img src="../../assets/img/maxcoach-shape-05.png" class="img-fluid shape-01 position-absolute" alt="shape-img">
+                    </div>
+                    <div class="col-5 d-flex flex-column align-items-center">
+                        <h5>Start today for getting <span>Online Certification</span></h5>
+                        <h3>You can be your own guiding star with our help!</h3>
+                        <button class="border-0 ms_button rounded-2 d-block my-2">Get started now</button>
+                    </div>
+                    <div class="col position-relative">
+                            <img src="../../assets/img/maxcoach-shape-02.png" class="img-fluid shape-02 position-absolute" alt="shape-img">
+                    </div>
                 </div>
 
             </div>
@@ -163,6 +178,36 @@ export default {
             
         }
 
+    }
+
+
+    .ms_get-started{
+        h5{
+            color:$colorDarkBlue;
+
+            span{
+                color: $colorGreen;
+            }
+        }
+
+        h3{
+            color:$colorDarkBlue
+        }
+        
+        .ms_button{
+            @include button;
+        }
+    
+        .shape-01{
+            right: 5px;
+            top: 20px;
+            width: 80px;
+            height: 80px;
+        }
+    
+        .shape-02{
+            left: 80px;
+        }
     }
 }
 </style>
