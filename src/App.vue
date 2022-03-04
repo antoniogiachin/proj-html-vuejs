@@ -30,6 +30,6 @@ export default {
 
 <style lang="scss">
 #app{
-  font-family: 'Open Sans';
+  font-family: 'Questrial';
 }
 </style>

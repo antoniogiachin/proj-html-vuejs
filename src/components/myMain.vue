@@ -14,6 +14,9 @@
 
         <!-- sezione varbatim quotes -->
         <verbatimQuotes/>
+
+        <!-- sezione recap-flex -->
+        <recapFlex/>
         
     </main>
 </template>
@@ -24,6 +27,8 @@ import onlineCourses from './partials/onlineCourses.vue'
 import smartTouring from './partials/smartTouring.vue'
 import enjoyComp from './partials/enjoyComp.vue'
 import verbatimQuotes from './partials/verbatimQuotes.vue'
+import recapFlex from './partials/recapFlex.vue'
+
 
 
 export default {
@@ -39,6 +44,8 @@ export default {
         enjoyComp,
 
         verbatimQuotes,
+
+        recapFlex,
     }
 }
 </script>
