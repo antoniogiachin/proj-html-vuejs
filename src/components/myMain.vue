@@ -20,6 +20,9 @@
 
         <!-- sezione most popular -->
         <mostPopular/>
+
+        <!-- sezione newsletter -->
+        <myNewsLetter/>
         
     </main>
 </template>
@@ -32,6 +35,8 @@ import enjoyComp from './partials/enjoyComp.vue'
 import verbatimQuotes from './partials/verbatimQuotes.vue'
 import recapFlex from './partials/recapFlex.vue'
 import mostPopular from './partials/mostPopular.vue'
+import myNewsLetter from './partials/myNewsLetter.vue'
+
 
 
 
@@ -53,6 +58,9 @@ export default {
         recapFlex,
 
         mostPopular,
+
+        myNewsLetter,
+        
     }
 }
 </script>
