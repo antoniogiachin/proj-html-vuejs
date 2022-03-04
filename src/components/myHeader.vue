@@ -16,21 +16,11 @@
                     <!-- lista link dinamica, ad ogni link in after fontawasome freccia giu' -->
                     <ul class="navbar-nav ms-auto me-3">
                         
-                        <li class="nav-item ">
-                            <a class="nav-link text-dark ms_nav-link" href="#">Link</a>
+                        <li class="nav-item " v-for="(link, index) in navLinks" :key="index">
+                            <a class="nav-link text-dark ms_nav-link" :href="link.url">{{link.name}}</a>
                         </li>
 
-                        <li class="nav-item ">
-                            <a class="nav-link text-dark" href="#">Link</a>
-                        </li>
-
-                        <li class="nav-item ">
-                            <a class="nav-link text-dark" href="#">Link</a>
-                        </li>
-
-                        <li class="nav-item ">
-                            <a class="nav-link text-dark" href="#">Link</a>
-                        </li>
+                        
 
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="#">
@@ -57,6 +47,11 @@
 <script>
 export default {
     name: 'myHeader',
+
+    //ricevo oggetto props da app'
+    props: {
+        "navLinks" : Array,
+    }
 }
 </script>
 

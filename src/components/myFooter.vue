@@ -7,10 +7,10 @@
                 <div class="col-6">
                     <span class="d-inline-block mb-2">Explore</span>
                     <ul>
-                        <li><a href="#">382 NE 191st St # 87394 Miami, FL 33179-3899</a> </li>
-                        <li><a href="#">+1(305)547-9909(9am - 5pm EST, Monday - Friday)</a> </li>
-                        <li><a href="#">support@MaxCoach.com</a> </li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a> </li>
+
+                        <li v-for="(adLink, index) in addressList" :key="index"><a :href="adLink.url">{{adLink.name}}</a> </li>
+                        
+                        <li><a href="#" v-for="(social, index) in footerSocial" :key="index"><i class="fab me-4" :class="social.class"></i></a> </li>
                         
                     </ul>
                 </div>
@@ -20,12 +20,7 @@
                             <span class="d-inline-block mb-2">Explore</span>
                             <ul class="list-right d-flex flex-column">
 
-                                <li><a href="#">Start Here</a> </li>
-                                <li><a href="#">Blog</a> </li>
-                                <li><a href="#">About us</a> </li>
-                                <li><a href="#">About us</a> </li>
-                                <li><a href="#">About us</a> </li>
-                                <li><a href="#">About us</a> </li>
+                                <li v-for="(exLink, index) in exploreList" :key="index"><a :href="exLink.url">{{exLink.name}}</a> </li>
                         
                             </ul>   
                         </div>
@@ -35,10 +30,7 @@
 
                             <ul>
 
-                                <li><a href="#">Membership</a> </li>
-                                <li><a href="#">Purchase Guide</a> </li>
-                                <li><a href="#">Privacy Policy</a> </li>
-                                <li><a href="#">Privacy Policy</a> </li>
+                                <li v-for="(infoLink, index) in informationList" :key="index"><a :href="infoLink.url">{{infoLink.name}}</a> </li>
                         
                             </ul> 
                         </div>
@@ -54,6 +46,40 @@
 <script>
 export default {
     name: 'myFooter',
+
+    props: {
+        
+        "footerSocial" : Array,
+
+        "footerLinks" : Array
+
+    },
+
+    computed:{
+
+        // lista filtrata per address
+        addressList: function (){
+            return this.footerLinks.filter(value => {
+                return value.address == true;
+            })
+        },
+
+        // lista filtrata  per explore
+        exploreList: function (){
+            return this.footerLinks.filter(value => {
+                return value.explore == true;
+            })
+        },
+
+        // lista filtrata  per information
+        informationList: function (){
+            return this.footerLinks.filter(value => {
+                return value.information == true;
+            })
+        },
+
+
+    }
 }
 </script>
 

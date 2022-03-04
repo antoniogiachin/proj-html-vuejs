@@ -38,9 +38,6 @@ import mostPopular from './partials/mostPopular.vue'
 import myNewsLetter from './partials/myNewsLetter.vue'
 
 
-
-
-
 export default {
     name: 'myMain',
 
@@ -61,7 +58,9 @@ export default {
 
         myNewsLetter,
         
-    }
+    },
+
+    
 }
 </script>
 
