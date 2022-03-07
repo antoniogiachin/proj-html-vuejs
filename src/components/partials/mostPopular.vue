@@ -13,12 +13,7 @@
                     </div>
 
                     <!-- lista sezione -->
-                    <ul class="fa-ul">
-                        <li> <a href="#"><span class="fa-li"><i class="fas fa-long-arrow-alt-right me-1"></i></span>Become a Better Blogger: Content Planning</a> </li>
-                        <li><a href="#"><span class="fa-li"><i class="fas fa-long-arrow-alt-right me-1"></i></span>Promoting Your Online Buiness on Pinterest</a> </li>
-                        <li><a href="#"><span class="fa-li"><i class="fas fa-long-arrow-alt-right me-1"></i></span>Designing on Online Course from Expert's Prospective</a> </li>
-                        <li><a href="#"><span class="fa-li"><i class="fas fa-long-arrow-alt-right me-1"></i></span>Why Online Courses are The Future of Education</a> </li>
-                    </ul>
+                    <mostPopularList :popularList="popularList"/>
                 </div>
                 
                 <div class="col-4">
@@ -59,8 +54,52 @@
 </template>
 
 <script>
+import mostPopularList from './elements/mostPopularList.vue';
+
 export default {
     name: 'mostPopular',
+
+    components: {
+        mostPopularList,
+    },
+
+    data(){
+        return {
+
+            // array oggetti lista popular
+            popularList: [
+
+                {
+                    url: '#',
+
+                    title: 'Become a Better Blogger: Content Planning'
+                
+                },
+
+                {
+                    url: '#',
+
+                    title: 'Promoting Your Online Buiness on Pinterest'
+                
+                },
+
+                {
+                    url: '#',
+
+                    title: 'Designing on Online Course from Expert\'s Prospective'
+                
+                },
+
+                {
+                    url: '#',
+
+                    title: 'Why Online Courses are The Future of Education'
+                
+                },
+
+            ],
+        }
+    }
 }
 </script>
 
