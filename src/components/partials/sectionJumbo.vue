@@ -58,37 +58,37 @@ export default {
                 {
                     brand: 'stylus',
 
-                    appendUrl: require('../../assets/img/client-logo-01.png'),
+                    url: 'client-logo-01.png'
                 },
 
                 {
                     brand: 'tree',
 
-                    appendUrl: require('../../assets/img/client-logo-02.png'),
+                    url: 'client-logo-02.png'
                 },
 
                 {
                     brand: 'brook',
 
-                    appendUrl: require('../../assets/img/client-logo-03.png'),
+                    url: 'client-logo-03.png'
                 },
 
                 {
                     brand: 'pencil',
 
-                    appendUrl: require('../../assets/img/client-logo-04.png'),
+                    url: 'client-logo-04.png'
                 },
 
                 {
                     brand: 'alive',
 
-                    appendUrl: require('../../assets/img/client-logo-05.png'),
+                    url: 'client-logo-05.png'
                 },
 
                 {
                     brand: 'sixbase',
 
-                    appendUrl:require('../../assets/img/client-logo-06.png'),
+                    url:'client-logo-06.png'
                 },
 
             ],

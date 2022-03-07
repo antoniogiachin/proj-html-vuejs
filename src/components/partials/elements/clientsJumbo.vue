@@ -1,7 +1,7 @@
 <template>
 <div class="row mt-4">
     <div class="col d-flex align-items-center justify-content-center" v-for="(client, index) in clients" :key="index">
-        <img :src="client.appendUrl" class="ms_client-img" alt="client">
+        <img :src='require("../../../assets/img/" + client.url)' class="ms_client-img" alt="client">
     </div>  
 </div>
 </template>
