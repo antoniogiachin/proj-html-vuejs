@@ -70,7 +70,7 @@ export default {
     }
 
     p{
-        color: $colorFadeBlue;
+        color: $colorDarkSecond;
     }
     .ms_smart-link{
 

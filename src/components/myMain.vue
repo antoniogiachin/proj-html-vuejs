@@ -65,5 +65,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+main{
+  font-weight: bolder;
+}
 </style>

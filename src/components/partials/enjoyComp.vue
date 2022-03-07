@@ -63,7 +63,7 @@ export default {
 
 
     p{
-        color:$colorFadeBlue;
+        color:$colorDarkSecond;
 
         span {
             color:$colorDarkBlue;
@@ -80,11 +80,16 @@ export default {
 
     .ms_link{
         color: $colorGreen;
+        text-decoration: none;
 
         &::after{
             @include awasomeAppend;
             content: "\f178";
             margin-left: 5px;
+        }
+
+        &:hover{
+            text-decoration: underline;
         }
     }
 

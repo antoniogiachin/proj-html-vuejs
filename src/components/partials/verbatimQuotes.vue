@@ -156,7 +156,7 @@ export default {
         }
 
         p{
-            color: $colorFadeBlue;
+            color: $colorDarkSecond;
         }
         
         span{

@@ -93,11 +93,16 @@ export default {
         .ms_sample-link{
             font-size: $fontLittle;
             color: $colorGreen;
+            text-decoration: none;
 
             &::after{
                 @include awasomeAppend;
                 content: "\f178";
                 margin-left: 5px;
+            }
+
+            &:hover{
+                text-decoration: underline;
             }
         }
 

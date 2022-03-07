@@ -17,7 +17,7 @@
                     <ul class="navbar-nav ms-auto me-3">
                         
                         <li class="nav-item " v-for="(link, index) in navLinks" :key="index">
-                            <a class="nav-link text-dark ms_nav-link" :href="link.url">{{link.name}}</a>
+                            <a class="nav-link ms_nav-link" :href="link.url">{{link.name}}</a>
                         </li>
 
                         
@@ -61,29 +61,48 @@ export default {
 
 .ms_header{
     box-shadow: 0px 3px 10px $colorGrey;
-}
+    font-size: $fontLittle;
+
+    .ms_nav-link{
+
+        color: $colorDarkFirst;
+
+        &:hover{
+            color: $colorGreen;
+        }
 
 
-.ms_nav-link::after{
-    display: inline-block;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font: var(--fa-font-solid);
-    content: "\f078";
-    font-size: 0.7em;
-    margin: 0px 5px;
-}
-
-.ms_form {
-    background-color: $colorLightGrey;
-    
-    .ms_input{
-        outline: none !important;
-
+        &::after{
+            display: inline-block;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font: var(--fa-font-solid);
+            content: "\f078";
+            margin: 0px 5px;
+        }
     }
 
-    .ms_search-icon{
+    .fa-circle-user:hover{
+        transform: scale(1.2);
         color: $colorGreen;
     }
+
+
+    .ms_form {
+        background-color: $colorLightGrey;
+        
+        .ms_input{
+            outline: none !important;
+
+        }
+
+        .ms_search-icon{
+            color: $colorGreen;
+        }
+    }
+
+
 }
+
+
 </style>

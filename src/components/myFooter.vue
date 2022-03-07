@@ -88,6 +88,8 @@ export default {
 
 footer{
     background-color: $mostPopular;
+    font-size: $fontLittle;
+    font-weight: bolder;
     padding: 0px 80px;
 
     ul {
@@ -97,7 +99,11 @@ footer{
 
         li a{
             text-decoration: none;
-            color: $colorFadeBlue
+            color: $colorFadeBlue;
+
+            &:hover{
+                color: $colorGreen;
+            }
         }
     }
 

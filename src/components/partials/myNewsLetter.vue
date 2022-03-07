@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-6 offset-1 d-flex flex-column align-items-center">
                     <h3>Subscribe <span>Newsletter</span></h3>
-                    <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
+                    <p class="px-2">Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
                     <div class="input-group mb-3">
                         <input type="email" class="form-control ms_input border-0" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <button class="border-0 ms_button rounded-2  ">Subscribe</button>
@@ -35,7 +35,7 @@ export default {
 
 .ms_newsletter{
     p{
-            color:$colorDarkBlue;
+            color:$colorDarkSecond;
 
     }
 
@@ -48,7 +48,9 @@ export default {
     }
 
     .ms_input{
-        background-color: $colorLightGrey
+        
+        background-color: $colorLightGrey;
+
     }
 
     .ms_button{

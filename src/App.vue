@@ -263,6 +263,5 @@ export default {
 <style lang="scss">
 #app{
   font-family: 'Questrial';
-  font-weight: bolder;
 }
 </style>
