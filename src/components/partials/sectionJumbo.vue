@@ -1,64 +1,129 @@
 <template>
     <section id="jumbotron" class="py-5">
 
-            <div class="ms_actions d-flex flex-column align-items-center position-absolute rounded-start">
-                <a href="#" class="text-dark"><i class="fas fa-ruler-combined"></i></a>
-                <a href="#" class="text-dark"><i class="fa-regular fa-life-ring"></i></a>
-                <a href="#" class="text-dark"><i class="fas fa-book"></i></a>
-                <a href="#" class="text-dark"><i class="fas fa-shopping-cart"></i></a>
-            </div>
+        <!-- componente menu azioni -->
+        <actionsJumbo :actionLinks="actionLinks"/>
 
-            <div class="container">
+        <div class="container">
 
-                <!-- riga download e img -->
-                <div class="row">
-                    <div class="col-5 d-flex align-items-center">
-                        <div class="ms_card">
-                            <h1 class="mb-1">Distant learning for further expansion</h1>
-                            <p>Learning is a lofe-long jurney that in fact we never find the terminate stop. Stop searching, enjoy the process.</p>
-                            <button class="border-0 ms_button rounded-2 d-block my-2"> <span>Download free guide</span> </button>
-                            <span class="ms_sample">Have questions?</span> <span ><a class="ms_sample-link" href="#">Get Free Sample</a></span>
-                        </div>
-                    </div>
-                    <div class="col-6 offset-1 d-flex justify-content-center position-relative">
-                        <div class="shape-container position-absolute d-flex flex-column">
-                            <img src="../../assets/img/maxcoach-shape-07.png" class="shape" alt="shape-jumbo">
-                            <img src="../../assets/img/maxcoach-shape-07.png" class="shape" alt="shape-jumbo">
-                        </div>
-                        <img src="../../assets/img/maxcoach-shape-07.png" class="shape shape-03 position-absolute" alt="shape-jumbo">
-                        <img src="../../assets/img/about-me-profile.jpg"  class="rounded-circle w-75 " alt="first-section-img">
-                        <img src="../../assets/img/maxcoach-shape-02.png" class="shape shape-02 my-5" alt="shape-jumbo">
+            <!-- riga download e img -->
+            <div class="row">
+                <div class="col-5 d-flex align-items-center">
+                    <div class="ms_card">
+                        <h1 class="mb-1">Distant learning for further expansion</h1>
+                        <p>Learning is a lofe-long jurney that in fact we never find the terminate stop. Stop searching, enjoy the process.</p>
+                        <button class="border-0 ms_button rounded-2 d-block my-2"> <span>Download free guide</span> </button>
+                        <span class="ms_sample">Have questions?</span> <span ><a class="ms_sample-link" href="#">Get Free Sample</a></span>
                     </div>
                 </div>
-
-                <!-- row clients -->
-                <div class="row my-4">
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="../../assets/img/client-logo-01.png" class="ms_client-img" alt="client-1">
+                <div class="col-6 offset-1 d-flex justify-content-center position-relative">
+                    <div class="shape-container position-absolute d-flex flex-column">
+                        <img src="../../assets/img/maxcoach-shape-07.png" class="shape" alt="shape-jumbo">
+                        <img src="../../assets/img/maxcoach-shape-07.png" class="shape" alt="shape-jumbo">
                     </div>
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="../../assets/img/client-logo-02.png" class="ms_client-img" alt="client-2">
-                    </div>
-                    <div class="col d-flex align-items-center justify-content-centerr">
-                        <img src="../../assets/img/client-logo-03.png" class="ms_client-img" alt="client-3">
-                    </div>
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="../../assets/img/client-logo-04.png" class="ms_client-img" alt="client-4">
-                    </div>
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="../../assets/img/client-logo-05.png" class="ms_client-img" alt="client-5">
-                    </div>
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="../../assets/img/client-logo-06.png" class="ms_client-img" alt="client-6">
-                    </div>
+                    <img src="../../assets/img/maxcoach-shape-07.png" class="shape shape-03 position-absolute" alt="shape-jumbo">
+                    <img src="../../assets/img/about-me-profile.jpg"  class="rounded-circle w-75 " alt="first-section-img">
+                    <img src="../../assets/img/maxcoach-shape-02.png" class="shape shape-02 my-5" alt="shape-jumbo">
                 </div>
             </div>
+
+            <!-- row clientsJumbo -->
+            <clientsJumbo :clients="clients" />
+        </div>
+        
         </section>
 </template>
 
 <script>
+import clientsJumbo from './elements/clientsJumbo.vue';
+import actionsJumbo from './elements/actionsJumbo.vue';
+
+
 export default {
-    name: 'sectionJumbo'
+    name: 'sectionJumbo',
+
+    components: {
+        clientsJumbo,
+
+        actionsJumbo,
+    },
+
+    data(){
+
+        return {
+
+            // Array oggetti clients
+            clients: [
+
+                {
+                    brand: 'stylus',
+
+                    appendUrl: require('../../assets/img/client-logo-01.png'),
+                },
+
+                {
+                    brand: 'tree',
+
+                    appendUrl: require('../../assets/img/client-logo-02.png'),
+                },
+
+                {
+                    brand: 'brook',
+
+                    appendUrl: require('../../assets/img/client-logo-03.png'),
+                },
+
+                {
+                    brand: 'pencil',
+
+                    appendUrl: require('../../assets/img/client-logo-04.png'),
+                },
+
+                {
+                    brand: 'alive',
+
+                    appendUrl: require('../../assets/img/client-logo-05.png'),
+                },
+
+                {
+                    brand: 'sixbase',
+
+                    appendUrl:require('../../assets/img/client-logo-06.png'),
+                },
+
+            ],
+
+            //array Actions Links
+            actionLinks : [
+
+                {
+                    url: '#',
+
+                    icon: 'fa-ruler-combined'
+                },
+
+                {
+                    url: '#',
+
+                    icon: 'fa-life-ring'
+                },
+
+                {
+                    url: '#',
+
+                    icon: 'fa-book'
+                },
+
+                {
+                    url: '#',
+
+                    icon: 'fa-shopping-cart'
+                },
+            ],
+
+        }
+
+    }
 }
 </script>
 
@@ -69,13 +134,6 @@ export default {
 #jumbotron{
     position: relative;
 
-    .ms_actions{
-        gap: 10px;
-        right: 0;
-        box-shadow: 0px 3px 10px $colorGrey;
-        padding: 5px;
-        font-size: $fontLittle;
-    }
     .ms_card{
 
         color: $colorDarkBlue;
